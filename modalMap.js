@@ -42,12 +42,12 @@
 		    mapContainer      = modal.find(".modalMapIframeMap"),
 		    streetContainer   = modal.find(".modalMapIframeStreet"),
 		    modalMapContainer = modal.find(".modalMapContainer"),
-			modalMapContent   = modal.find(".modalMapContent"),
-			heading           = modal.find(".modalMapHeading"),
-			text              = modal.find(".modalMapText"),
-			hr                = modal.find(".modalMapHr"),
-			btn               = modal.find(".modalMapBtn"),
-			btnSelected       = modal.find(".modalMapBtnSelected");
+		    modalMapContent   = modal.find(".modalMapContent"),
+		    heading           = modal.find(".modalMapHeading"),
+		    text              = modal.find(".modalMapText"),
+		    hr                = modal.find(".modalMapHr"),
+		    btn               = modal.find(".modalMapBtn"),
+		    btnSelected       = modal.find(".modalMapBtnSelected");
 		
 		styleModal();
 		
