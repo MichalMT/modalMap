@@ -14,7 +14,9 @@
 			onClose: null,
 			fadeIn: 1000,
 			fadeOut: 600,
-			default: 'map'
+			default: 'map',
+			mapPlace: null,
+			streetPlace: null
 		}, options)
 		
 		var width = (window.innerWidth>settings.width+30) ? settings.width : window.innerWidth-30;
@@ -59,7 +61,7 @@
 				"height='"+ settings.height +"'" +
 				"frameborder='0'" +
 				"style='border:0'" +
-				"src='https://www.google.com/maps/embed/v1/streetview?key="+ options.key +"&location=48.1106%2C17.1114'" +
+				"src='https://www.google.com/maps/embed/v1/streetview?key="+ options.key +"&location="+options.streetPlace+"'" +
 				"allowfullscreen>" +
 			"</iframe>"
 		);
@@ -70,7 +72,7 @@
 				"height='"+ settings.height +"'" +
 				"frameborder='0'" +
 				"style='border:0'" +
-				"src='https://www.google.com/maps/embed/v1/place?q=Technopol Bratislava&key="+ options.key +"' " +
+				"src='https://www.google.com/maps/embed/v1/place?q="+options.mapPlace+"&key="+ options.key +"' " +
 				"allowfullscreen>" +
 			"</iframe>"
 			
